@@ -1,0 +1,14 @@
+/* src\components\InfoAluno\styles.css */
+
+.infoAluno h1 {
+    color:azure;
+    margin: 10 px 0;
+    font-size: 24 px;
+}
+
+.infoAluno p {
+    color: black;
+    margin: 10 px;
+    font-size: 18 px;
+
+}

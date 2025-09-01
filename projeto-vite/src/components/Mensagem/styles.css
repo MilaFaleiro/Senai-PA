@@ -1,0 +1,22 @@
+/* src\components\Mensagem\styles.css */
+.mensagem {
+    background-color: #f5f6fa;
+    color: #333;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(200, 200, 200, 0.15);
+}
+
+.mensagem h1 {
+    color: #bfc4d7;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.mensagem p {
+    color: #555;
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 8px;
+}

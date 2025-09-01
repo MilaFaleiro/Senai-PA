@@ -1,0 +1,31 @@
+.info-curso {
+    background: #f8faf8;
+    border: 1px solid #e0e4e0;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    margin: 32px auto;
+    box-shadow: 0 2px 8px rgba(60, 80, 60, 0.06);
+}
+
+.info-curso h2 {
+    color: #4e6e5d;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.info-curso p {
+    color: #5a5a5a;
+    background: #f2f5f2;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-left: 4px solid #b7e4c7;
+}
+
+.info-curso p:last-child {
+    margin-bottom: 0;
+}
