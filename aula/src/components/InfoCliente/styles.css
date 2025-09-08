@@ -1,0 +1,116 @@
+.info-cliente {
+    max-width: 420px;
+    margin: 48px auto;
+    padding: 36px 28px;
+    background: linear-gradient(135deg, #c7eaff 0%, #ffd6e0 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(80, 80, 120, 0.10);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2d2d2d;
+    animation: fadeInUp 1s cubic-bezier(.23,1,.32,1);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.info-cliente h2,
+.info-cliente h3 {
+    color: #3a5ca8;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.info-cliente h2:hover,
+.info-cliente h3:hover {
+    color: #e85a71;
+}
+
+.info-cliente form > div {
+    margin-bottom: 22px;
+}
+
+.info-cliente label {
+    display: block;
+    margin-bottom: 7px;
+    color: #5a8bbd;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info-cliente input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #b3c7e6;
+    border-radius: 10px;
+    background: #f7faff;
+    color: #3a3a3a;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.info-cliente input:focus {
+    border-color: #e85a71;
+    box-shadow: 0 0 0 2px #e85a7133;
+    outline: none;
+}
+
+.info-cliente button {
+    background: linear-gradient(90deg, #a8d8ea 0%, #e85a71 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(232, 90, 113, 0.08);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.info-cliente button:hover {
+    background: linear-gradient(90deg, #e85a71 0%, #a8d8ea 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.info-cliente ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.info-cliente li {
+    background: linear-gradient(90deg, #f7faff 60%, #ffd6e0 100%);
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #3a5ca8;
+    font-size: 16px;
+    box-shadow: 0 1px 4px rgba(80, 80, 120, 0.05);
+    animation: fadeInLi 0.6s;
+}
+
+@keyframes fadeInLi {
+    from { opacity: 0; transform: translateX(-20px);}
+    to { opacity: 1; transform: translateX(0);}
+}
+
+.info-cliente img {
+    display: block;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(80, 80, 120, 0.12);
+    object-fit: cover;
+    border: 4px solid #e85a71;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.info-cliente img:hover {
+    box-shadow: 0 8px 24px rgba(168, 216, 234, 0.18);
+    border-color: #3a5ca8;
+}
