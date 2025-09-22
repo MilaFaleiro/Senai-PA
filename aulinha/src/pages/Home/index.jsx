@@ -1,5 +1,6 @@
 // src\pages\Home\index.jsx
-import "./styles.css";
+import "./style.css";
+
 
 const topics = [
     { title: "Algoritmos", desc: "Desvende a lógica por trás das máquinas." },

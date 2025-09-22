@@ -1,0 +1,93 @@
+/* src\pages\SobreNos\style.css */
+
+.sobre-nos-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 40px 24px 0 24px;
+    background: #f7f9fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+.sobre-nos-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.sobre-nos-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 8px 0;
+    color: #1a237e;
+    font-weight: 700;
+}
+
+.sobre-nos-header p {
+    font-size: 1.15rem;
+    color: #374151;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.sobre-nos-lista {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.sobre-nos-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sobre-nos-lista li {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    padding: 18px 16px;
+    margin-bottom: 16px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.sobre-nos-lista li:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(26, 35, 126, 0.10);
+}
+
+.sobre-nos-lista li h3 {
+    margin: 0;
+    color: #283593;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.sobre-nos-lista li p {
+    margin: 8px 0 0 0;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 700px) {
+    .sobre-nos-container {
+        padding: 18px 6px 0 6px;
+        gap: 32px;
+    }
+
+    .sobre-nos-header {
+        padding: 20px 10px;
+    }
+
+    .sobre-nos-lista li {
+        padding: 16px 10px;
+    }
+}

@@ -1,0 +1,124 @@
+/* src\pages\FaleConosco\style.css */
+
+.contato-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 40px 24px 40px 24px;
+    background: #f7f9fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.contato-header {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contato-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 8px 0;
+    color: #1a237e;
+    font-weight: 700;
+}
+
+.contato-header p {
+    font-size: 1.15rem;
+    color: #374151;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.form {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #444;
+}
+
+.field > span {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+
+.field input,
+.field textarea {
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+    font-family: inherit;
+    color: #222;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: #1a237e;
+    outline: none;
+}
+
+
+.btn.primary {
+    grid-column: 1 / -1; 
+    max-width: 250px;
+    
+    font-size: 1.1rem;
+    font-weight: 70;
+    color: white;
+    background: #eaebf7;
+    border: none;
+    border-radius: 160px;
+    cursor: pointer;
+    justify-self: start;
+    box-shadow: 0 4px 20px rgba(26, 35, 126, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.primary:hover {
+    background-color: #283593;
+    box-shadow: 0 6px 24px rgba(150, 161, 240, 0.7);
+}
+
+
+@media (max-width: 700px) {
+    .contato-container {
+        padding: 18px 12px 40px 12px;
+        gap: 32px;
+    }
+    .contato-header {
+        padding: 20px 16px;
+    }
+    .form {
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+        gap: 18px;
+    }
+    .btn.primary {
+        max-width: 100%;
+        width: 100%;
+        justify-self: stretch;
+    }
+}

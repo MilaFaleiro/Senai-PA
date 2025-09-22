@@ -1,6 +1,5 @@
-// src\pages\Servicos\index.jsx
-
-import './styles.css';
+// src/pages/Servicos/index.jsx
+import './style.css';
 
 const servicos = [
     {
@@ -27,19 +26,22 @@ const servicos = [
 
 export default function Servicos() {
     return (
-        <div style={{ padding: "2rem" }}>
-            <h1>Serviços</h1>
-            <p>
-                Conheça os principais serviços oferecidos na área de Ciência da Computação:
-            </p>
-            <ul style={{ listStyle: "none", padding: 0 }}>
+        <div className="servicos-container">
+            <section className="servicos-header">
+                <h1>Serviços</h1>
+                <p>
+                    Conheça os principais serviços oferecidos na área de Ciência da Computação:
+                </p>
+            </section>
+
+            <section className="servicos-lista">
                 {servicos.map((servico, idx) => (
-                    <li key={idx} style={{ marginBottom: "1.5rem" }}>
-                        <h2 style={{ margin: 0 }}>{servico.titulo}</h2>
-                        <p style={{ margin: "0.5rem 0 0 0" }}>{servico.descricao}</p>
-                    </li>
+                    <div key={idx} className="servico-card">
+                        <h2>{servico.titulo}</h2>
+                        <p>{servico.descricao}</p>
+                    </div>
                 ))}
-            </ul>
+            </section>
         </div>
     );
 }

@@ -13,12 +13,14 @@ function App() {
     <>
      <div className='app'>
       <Header/>
-      <main className='conteiner'>
+      <main className='container'>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/serviços' element={<Servicos/>}/>
+          <Route path='/servicos' element={<Servicos/>}/>
           <Route path='/sobre-nos' element={<SobreNos/>}/>
-          <Route path='/fale-conosco' element={<FaleConosco/>}/>
+          <Route path='/contato' element={<FaleConosco />} />
+
+          <Route path="*" element={<h2>Página não encontrada</h2>} />
           </Routes>
           </main>
           <Footer/>
